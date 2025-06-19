@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    /* place-items: center; */
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    background: rgb(225, 225, 225);
+}
+.wrapper{
+    width:350px;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.5) ;
+    border-radius: 15px;
+    background: white;
+
+}
+
+.wrapper .title{
+    line-height: 70px;
+    background: linear-gradient(to right,rgb(160, 1, 160),rgb(216, 57, 216));
+    border-radius: 15px 15px 0 0;
+    font-weight: 600;
+    font-size: 25px;
+    /* justify-content: center; */
+    text-align: center;
+    color: white;
+}
+
+.wrapper form{
+    padding: 10px 20px 20px 20px;
+}
+
+.wrapper form .field{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.wrapper form .field input{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    /* box-shadow: 0 0px 2px 2px rgba(160,1,160,0.5); */
+    outline: none;
+}
+
+.wrapper form .field label{
+    position: absolute;
+    top:50%;
+    left: 20px;
+    padding-right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: rgb(179, 178, 178);
+    transition: all 0.5s ease;
+}
+
+.wrapper form .field input:focus ~label,
+.wrapper form .field input:valid ~label{
+    top:0;
+    transform: translateY(-50%);
+    background: white;
+    color: rgb(216, 57, 216);
+    font-size: 12px;
+}
+
+.wrapper form .field input:focus,
+.wrapper form .field input:valid{
+    border: 1px solid rgb(216, 57, 216);
+}
+
+.wrapper form .check{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.wrapper form .check a{
+    margin-left: 10px;
+}
+
+.wrapper form .field input[type="Submit"]{
+    background: linear-gradient(to right,rgb(160, 1, 160),rgb(216, 57, 216));
+    border: none;
+    /* display: flex; */
+    text-align: center;
+    /* justify-content: center; */
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    /* line-height: 40px; */
+    padding: 0;
+    /* height: 40px; */
+}
+
+.wrapper form .field input[type="Submit"]:active{
+    transform: scale(0.95);
+}
+
+.wrapper form .sign-up{
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.wrapper form .sign-up a{ 
+    margin-left: 10px;
+}
