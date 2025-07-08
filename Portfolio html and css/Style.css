@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    /* position: absolute; */
+    height: 100vh;
+    width:100%;
+    background: url("images.png") no-repeat;
+    background-position:center left;
+    background-size: 500px;
+}
+
+header nav{
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    /* background: red; */
+    z-index: 2000;
+}
+
+nav .navbar{
+    width:90%;
+    /* background: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto 20px auto;
+}
+
+.navbar .logo{
+    height: 90px;
+    width:180px;
+}
+
+.navbar .logo img{
+    height: 100%;
+    width:100%;
+    object-fit: contain;
+}
+
+.navbar .menu{
+    display: flex;
+}
+
+.navbar .menu li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.menu li a{
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    color:rgb(48, 64, 93);
+    transition: all 0.5s ease;
+}
+
+.menu li a:hover{
+    color: black;
+    font-weight: 700;
+}
+
+.navbar .search-box{
+    position:relative;
+    height:50px;
+    width: 250px;
+}
+
+.search-box input[type="text"]{
+    position:absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    color:rgb(48, 64, 93);
+    font-size: 18px;
+    outline: none;
+    border: 2px solid rgb(48, 64, 93);
+    border-radius: 10px;
+    padding: 0 10px 0 40px;
+}
+
+.search-box a{
+    position:absolute;
+    left:10px;
+    top:55%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    border-right: 2px solid rgb(48, 64, 93);
+    color: rgb(48, 64, 93);
+    padding-right: 5px;
+    /* height: 90%; */
+}
+
+.content{
+    position: absolute;
+    top:35%;
+    left:7%;
+}
+
+.content .text{
+    font-size: 30px;
+    color: rgb(48, 64, 93);
+}
+
+.content .name{
+    font-size: 60px;
+    font-weight: 500px;
+    color: rgb(48, 64, 93);
+    margin: -20px 0 0 -3px;
+}
+
+.content .job{
+    font-size: 40px;
+    color: rgb(48, 64, 93);
+    display: flex;
+}
+
+.content .text-content{
+    margin-left: 140px;
+}
+
+.content .job .typing-text{
+    color: aqua;
+    margin-left: 10px;
+    white-space: nowrap;
+    border-right: 4px solid aqua;
+    animation: typing 5s steps(15) infinite;
+    /* background: red; */
+    overflow: hidden;
+}
+
+@keyframes typing {
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 18ch;
+    }
+    100%{
+        width: 0ch;
+    }
+}
+
+.content .buttons button{
+    margin: 20px 0 0 50px;
+    padding: 8px 6px;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(135deg, aqua 5%, rgb(200, 83, 200) 100%);
+    transition: all 0.5s ease;
+}
+
+.content .buttons button{
+    transform: scale(0.98);
+}
+
+header .boy img{
+    height: 85%;
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+    border-radius: 50px;
+}
+
+header .media {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+header .media a{
+    color: rgb(48, 64, 93);
+    font-weight: 500;
+    margin-left: 8px 0;
+    font-size: 20px;
+    opacity: 0.6;
+    transition: all 0.5s ease;
+}
+
+.media a:hover{
+    opacity: 1;
+}
